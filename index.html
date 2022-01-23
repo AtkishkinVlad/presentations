@@ -3,10 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta lang="ru">
 
 		<title>
 			Конструктор адресных табличек
 		</title>
+
+		<link rel="shortcut icon" 
+			  href="https://i.ibb.co/K2SjGtx/91123093-s-200-v-4.png" 
+			  type="image/x-icon">
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -18,30 +23,119 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					Конструктор адресных табличек на NextJS
+					<p style="color: rgba(254, 199, 46, 1);">
+						Конструктор адресных табличек
+					</p>
+					<img src="https://i.ibb.co/wJw7ZXR/t.png" 
+						 alt="табличка" 
+						 style="width: auto; height: auto; border-radius: 6px;">
 				</section>
 
 				<section>
 					<section data-markdown>
 						<textarea data-template>
-							### Функционал
+							Функционал
 						</textarea>
 					</section>
-					
+				</section>
+
+				<section>
 					<section data-markdown>
 						<textarea data-template>
-							#### Адресная табличка
+							Адресная табличка
 						</textarea>
 					</section>
-					
+				</section>
+
+				<section>
 					<section data-markdown>
 						<textarea data-template>
-							###### Автодополнение адреса
+							Динамическое изменение размеров
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							**Правила изменения размеров**
+
+							* до 8 символов
+
+							* 9-13 символов
+
+							* от 14 символов
+						</textarea>
+					</section>
+					<section>
+						<img src="https://i.ibb.co/SvH1Ct3/image.png">
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							Автодополнение адреса
 						</textarea>
 					</section>
 
 					<section data-background-video="videos/autocomplete.mp4" 
-						     data-background-video-muted>
+							 data-background-video-muted>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							* При изменении адреса обращаемся к серверу
+
+							* Получаем массив с `json-ами` адресов 
+
+							* Показываем пользователю 5 адресов
+						</textarea>
+					</section>
+
+					<section data-background-image="https://i.ibb.co/Bj43bPJ/carbon.png">
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							Изменение цвета фасада
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							* Есть пять цветов (HEX коды)
+								* <span style="color: #4e4d4b">#4e4d4b</span>
+
+								* <span style="color: #bfaa40">#bfaa40</span>
+
+								* <span style="color: #658655">#658655</span>
+
+								* <span style="color: #953737">#953737</span>
+
+								* <span style="color: #266d90">#266d90</span>
+							* Влияет на цвет background-а и таблички 
+						</textarea>
+					</section>
+
+					<section data-background-video="videos/facad.mp4" 
+							 data-background-video-muted>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							Стиль таблички для исторических зданий
+						</textarea>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							Отправка email
+						</textarea>
 					</section>
 				</section>
 				
@@ -49,11 +143,17 @@
 					<section>
 						Инструменты
 					</section>
+
 					<section>
 						ReactJS
 					</section>
+
 					<section>
 						NextJS
+					</section>
+
+					<section>
+						GitBook
 					</section>
 				</section>
 			</div>
@@ -66,7 +166,11 @@
 		<script>
 			Reveal.initialize({
 				hash: true,
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ 
+					RevealMarkdown, 
+					RevealHighlight, 
+					RevealNotes 
+				]
 			});
 		</script>
 	</body>
